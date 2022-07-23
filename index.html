@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+
+    <link rel="stylesheet" href="styles-counter/counter.css">
+
+</head>
+
+
+
+<body>
+    <div class="container">
+
+        <div id="div" class="number">0</div>
+
+    </div>
+
+    <div class="button-container">
+        <button onclick="increase()">Up</button>
+        <button onclick="decrease()">Down</button>
+    </div>
+        
+
+
+
+    <script>
+
+        let counter = 0;
+        let div = document.getElementById('div');
+
+        function increase(){
+            counter = counter +1;
+            div.innerText = counter;
+        }
+
+        function decrease(){
+            counter = counter - 1;
+            div.innerText = counter;
+        }
+
+
+    </script>
+</body>
+</html>
